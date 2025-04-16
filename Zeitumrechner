@@ -1,0 +1,22 @@
+import sys
+
+seconds = int(sys.argv[1])
+
+Sekunden_in_Minute = 60
+Sekunden_in_Stunde = 60 * Sekunden_in_Minute
+Sekunden_in_einem_Tag = 24 * Sekunden_in_Stunde
+Sekunden_in_einem_Jahr = Sekunden_in_einem_Tag * 365
+
+Jahr = seconds // Sekunden_in_einem_Jahr
+seconds %= Sekunden_in_einem_Jahr
+
+Tage = seconds // Sekunden_in_einem_Tag
+seconds %= Sekunden_in_Stunde
+
+Stunde = seconds // Sekunden_in_Stunde
+seconds %= Sekunden_in_Minute
+
+Minute = seconds // Sekunden_in_Minute
+seconds %= Sekunden_in_Minute
+
+print(str(sys.argv[1]) + " Sekunden ist " + str(Jahr) + " Jahr(e) " + str(Tage) + " Tag(e) " + str(Stunde) + " Stunde(n) " + str(Minute) + " Minute(n) " + "und " + str(seconds) + " Sekunde(n)")
