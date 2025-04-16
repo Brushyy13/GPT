@@ -1,3 +1,7 @@
+#Here I am trying to build a programm, which one takes the parameter from the commander as a integer. This integer represents seconds and the programm converts the seconds in years,days,hours,minutes and seconds.
+# At last part( at print function) I used the merging of Strings. It seems so basic and not usefull ( or in another words not so elegant :D ), because of the lack of my knowledge, I could not find anyhing else, let me pls knor if you found. Thanks in advance
+
+
 import sys
 
 seconds = int(sys.argv[1])
